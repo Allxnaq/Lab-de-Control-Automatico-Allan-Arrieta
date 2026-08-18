@@ -1,3 +1,9 @@
+Hola
+Podria por favor agregar su nombre completo y su ID.
+Gracias, 
+
+Luis C. Rosales A. 
+
 # Proyecto Individual 1 - Laboratorio de Control Automático
 
 Script desarrollado en MATLAB para la simulación paramétrica de un sistema de primer orden correspondiente al modelo simplificado de un motor de corriente directa.
