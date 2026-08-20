@@ -1,1 +1,94 @@
+# Proyecto Individual 2 - Laboratorio de Control Automático
+
+Script desarrollado en MATLAB para realizar el análisis de estabilidad de una función de transferencia mediante el criterio de **Routh-Hurwitz** y el **Lugar de las Raíces (Root Locus)**.
+
+El programa recibe los polos y ceros de una planta en lazo abierto (G(s)), construye la ecuación característica de lazo cerrado y determina el rango de valores de la ganancia (K) para los cuales el sistema es estable.
+
+## Requisitos
+
+* MATLAB
+* Symbolic Math Toolbox
+
+## Archivo principal
+
+`proyecto2_control.m`
+
+## Uso del script
+
+1. Abrir `proyecto2_control.m` en MATLAB.
+2. Ejecutar el script.
+3. Ingresar los polos de la función de transferencia utilizando un vector:
+
+```text
+[-1 -2 -3]
+```
+
+4. Ingresar los ceros de la función de transferencia de la misma forma:
+
+```text
+[-4]
+```
+
+Si la función de transferencia no posee ceros, ingresar:
+
+```text
+[]
+```
+
+## Formato de entrada
+
+Los polos y ceros deben escribirse entre corchetes y separados por espacios.
+
+Ejemplo:
+
+```text
+Ingrese los polos de G(s) como un vector ([num num num]): [-1 -2 -3]
+Ingrese los ceros de G(s) como un vector (use [] si no hay): [-4]
+```
+
+El script considera funciones de transferencia propias, por lo que el número de ceros no puede ser mayor que el número de polos.
+
+## Resultados
+
+El programa realiza automáticamente las siguientes operaciones:
+
+* Construcción de los polinomios del numerador (N(s)) y denominador (D(s)).
+* Construcción de la ecuación característica de lazo cerrado:
+
+[
+D(s)+K N(s)=0
+]
+
+* Obtención de los coeficientes de la ecuación característica.
+* Construcción automática de la tabla de Routh-Hurwitz.
+* Análisis de la primera columna de la tabla de Routh.
+* Determinación del rango de estabilidad de (K).
+* Determinación del rango estable considerando (K \geq 0).
+* Generación del gráfico del Lugar de las Raíces.
+* Identificación de los polos y ceros de lazo abierto.
+* Representación de la frontera de estabilidad (\operatorname{Re}(s)=0).
+* Conclusión automática sobre la estabilidad del sistema.
+
+## Ejemplo
+
+Para:
+
+```text
+Polos: [0 -1 -2]
+Ceros: []
+```
+
+se obtiene la ecuación característica:
+
+[
+s^3+3s^2+2s+K=0
+]
+
+y mediante el criterio de Routh-Hurwitz se determina que el sistema es estable para:
+
+[
+0<K<6
+]
+
+El gráfico del Lugar de las Raíces permite visualizar el comportamiento de los polos de lazo cerrado conforme varía la ganancia (K).
 
