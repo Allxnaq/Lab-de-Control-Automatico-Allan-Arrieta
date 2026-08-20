@@ -1,8 +1,5 @@
-Hola
-Podria por favor agregar su nombre completo y su ID.
-Gracias, 
-
-Luis C. Rosales A. 
+**Nombre completo:** Allan Arrieta Quiros  
+**Carné:** 2022085267
 
 # Proyecto Individual 1 - Laboratorio de Control Automático
 
