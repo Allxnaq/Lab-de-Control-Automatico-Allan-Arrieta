@@ -1,5 +1,8 @@
 # Proyecto Individual 2 - Laboratorio de Control Automático
 
+**Nombre completo:** Allan Arrieta Quiros  
+**Carné:** 2022085267
+
 Script desarrollado en MATLAB para realizar el análisis de estabilidad de una función de transferencia mediante el criterio de **Routh-Hurwitz** y el **Lugar de las Raíces (Root Locus)**.
 
 El programa recibe los polos y ceros de una planta en lazo abierto (G(s)), construye la ecuación característica de lazo cerrado y determina el rango de valores de la ganancia (K) para los cuales el sistema es estable.
