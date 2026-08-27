@@ -1,42 +1,51 @@
 # Proyecto Individual 3 - Laboratorio de Control Automático
 
-Script desarrollado en MATLAB para el análisis del lugar de las raíces
-(Root Locus) y el diseño interactivo de una nueva distribución de polos
-para obtener la ecuación característica de un sistema compensado.
+Script desarrollado en MATLAB para el análisis del Lugar de las Raíces
+(Root Locus) y la obtención de un sistema compensado a partir de una nueva
+distribución de polos seleccionada por el usuario.
 
 El programa recibe los polos y ceros de una función de transferencia,
-construye la planta en forma racional, genera el Root Locus y permite al
-usuario seleccionar gráficamente las nuevas posiciones deseadas de los
-polos.
+construye la planta en forma racional, genera el Root Locus y permite
+seleccionar gráficamente las nuevas posiciones deseadas de los polos.
 
-A partir de la nueva distribución se calcula la ecuación característica
-del sistema compensado y el compensador equivalente C(s).
+A partir de esta nueva distribución, el script calcula la nueva ecuación
+característica y obtiene el compensador equivalente C(s) como complemento
+de la planta original.
+
+---
 
 ## Requisitos
 
-Para ejecutar el programa se necesita:
+Para ejecutar el script se necesita:
 
 - MATLAB
 - Symbolic Math Toolbox
 
-No se requiere Simulink ni Control System Toolbox.
+El programa utiliza funciones de cálculo simbólico como:
+
+- `syms`
+- `sym`
+- `poly2sym`
+- `simplify`
+- `expand`
+- `collect`
+- `vpa`
+
+Por lo tanto, **Symbolic Math Toolbox debe estar instalado**.
 
 ### Instalación de Symbolic Math Toolbox
 
-Si Symbolic Math Toolbox no se encuentra instalado:
+En caso de no tenerlo instalado:
 
 1. Abrir MATLAB.
 2. Ir a la pestaña `Home`.
 3. Seleccionar `Add-Ons`.
-4. Abrir el explorador de complementos.
-5. Buscar `Symbolic Math Toolbox`.
-6. Seleccionar el toolbox e instalarlo.
+4. Buscar `Symbolic Math Toolbox`.
+5. Seleccionarlo e instalarlo.
 
-La instalación está sujeta a que la licencia de MATLAB utilizada tenga
-acceso a Symbolic Math Toolbox.
+La instalación depende de que la licencia utilizada tenga acceso al toolbox.
 
-Para comprobar los productos instalados se puede ejecutar en la ventana
-de comandos:
+También se puede verificar si está instalado ejecutando:
 
 ```matlab
 ver
