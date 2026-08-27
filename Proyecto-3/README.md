@@ -1,5 +1,8 @@
 # Proyecto Individual 3 - Laboratorio de Control Automático
 
+**Nombre completo:** Allan Arrieta Quiros  
+**Carné:** 2022085267
+
 Script desarrollado en MATLAB para el análisis del Lugar de las Raíces (**Root Locus**) y la obtención de un sistema compensado a partir de una nueva distribución de polos seleccionada por el usuario.
 
 El programa recibe los polos y ceros de una función de transferencia, construye la planta en forma racional, genera el Root Locus y permite seleccionar gráficamente nuevas posiciones para los polos del sistema.
